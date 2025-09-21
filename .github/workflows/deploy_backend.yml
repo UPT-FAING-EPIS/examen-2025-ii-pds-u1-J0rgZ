@@ -13,10 +13,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up .NET 8
+      
+      - name: Set up .NET 9 Preview 
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '8.0.x'
+          dotnet-version: '9.0.x'
+          dotnet-quality: 'preview'
 
       - name: Build and publish the project
         run: dotnet publish backend/src/AuctionApp.Api/AuctionApp.Api.csproj -c Release -o ./publish-backend
