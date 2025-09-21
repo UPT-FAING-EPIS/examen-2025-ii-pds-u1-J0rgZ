@@ -18,15 +18,17 @@ jobs:
         with:
           node-version: '20.x'
 
+      # El comando de compilación es el mismo, Vite lo maneja
       - name: Install dependencies and build
         run: |
           cd frontend
           npm install
           npm run build
 
+      # La carpeta de salida de Vite es 'dist', no 'build'
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'app-subasta'
           publish-profile: ${{ secrets.AZURE_FRONTEND_PUBLISH_PROFILE }}
-          package: './frontend/build'
+          package: './frontend/dist'

@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { HubConnectionBuilder } from '@microsoft/signalr';
-import './App.css'; // Importamos el CSS para estilos básicos
+import './App.css'; // Vite también usa este archivo para los estilos
 
-// --- URLs DE TU BACKEND DESPLEGADO EN AZURE ---
-// Estas son las direcciones reales de tu API.
+// URLs de tu backend desplegado en Azure
 const API_URL = 'https://app-subasta-backend.azurewebsites.net/api';
 const HUB_URL = 'https://app-subasta-backend.azurewebsites.net/auctionhub';
 
@@ -14,30 +13,26 @@ function App() {
     const [selectedAuction, setSelectedAuction] = useState(null);
     const [message, setMessage] = useState('Cargando subastas...');
 
-    // Este efecto se ejecuta una sola vez cuando el componente se carga
     useEffect(() => {
-        // 1. Cargar las subastas iniciales desde la API
         axios.get(`${API_URL}/auctions`)
             .then(res => {
                 if (res.data && res.data.length > 0) {
                     setAuctions(res.data);
-                    setMessage(''); // Limpiar mensaje de carga
+                    setMessage('');
                 } else {
-                    setMessage('No hay subastas activas en este momento.');
+                    setMessage('No hay subastas activas.');
                 }
             })
             .catch(err => {
-                console.error("Error al cargar las subastas:", err);
-                setMessage('Error al conectar con el servidor. Por favor, inténtelo más tarde.');
+                console.error("Error al cargar subastas:", err);
+                setMessage('Error al conectar con el servidor.');
             });
 
-        // 2. Configurar la conexión en tiempo real con SignalR
         const connection = new HubConnectionBuilder()
             .withUrl(HUB_URL)
             .withAutomaticReconnect()
             .build();
 
-        // Escuchar actualizaciones de pujas desde el servidor
         connection.on("ReceiveBidUpdate", (auctionId, newPrice) => {
             setAuctions(prevAuctions =>
                 prevAuctions.map(auc =>
@@ -46,31 +41,26 @@ function App() {
             );
         });
 
-        // Iniciar la conexión
-        connection.start().catch(err => console.error('Error de conexión con SignalR: ', err));
+        connection.start().catch(err => console.error('Error de conexión SignalR: ', err));
 
-        // Función de limpieza para cerrar la conexión al salir
         return () => {
             connection.stop();
         };
-    }, []); // El array vacío asegura que esto se ejecute solo una vez
+    }, []);
 
     const handleBidSubmit = (e) => {
         e.preventDefault();
         if (!selectedAuction || !bidAmount) return;
 
-        // Enviamos la puja como un número, no como texto
         const bidValue = parseFloat(bidAmount);
 
         axios.post(`${API_URL}/auctions/${selectedAuction.id}/bids`, bidValue, {
             headers: { 'Content-Type': 'application/json' }
         })
             .then(() => {
-                // Limpiar el campo de puja después de un éxito
                 setBidAmount('');
             })
             .catch(err => {
-                // Mostrar un error al usuario si la puja falla
                 alert(err.response?.data || 'Error al realizar la puja.');
                 console.error("Error al realizar la puja:", err);
             });
