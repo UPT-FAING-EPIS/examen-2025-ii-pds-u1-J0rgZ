@@ -2,18 +2,11 @@
 
 Una plataforma web completa desarrollada en .NET 6 y React que permite a los usuarios publicar artículos para subasta, realizar ofertas en tiempo real y gestionar todo el proceso de manera automatizada, desde la infraestructura hasta el despliegue final.
 
-[![Despliegue de Infraestructura](https://github.com/TU_USUARIO/TU_REPOSITORIO/actions/workflows/infra.yml/badge.svg)](https://github.com/TU_USUARIO/TU_REPOSITORIO/actions/workflows/infra.yml)
-[![Análisis con SonarCloud](https://github.com/TU_USUARIO/TU_REPOSITORIO/actions/workflows/sonar.yml/badge.svg)](https://github.com/TU_USUARIO/TU_REPOSITORIO/actions/workflows/sonar.yml)
-[![Despliegue de Aplicación](https://github.com/TU_USUARIO/TU_REPOSITORIO/actions/workflows/deploy_app.yml/badge.svg)](https://github.com/TU_USUARIO/TU_REPOSITORIO/actions/workflows/deploy_app.yml)
-[![Último Release](https://img.shields.io/github/v/release/TU_USUARIO/TU_REPOSITORIO)](https://github.com/TU_USUARIO/TU_REPOSITORIO/releases)
-
----
-
 ## 🚀 Aplicación Desplegada (Demo en Vivo)
 
 Puedes interactuar con la aplicación desplegada en Azure a través de la siguiente URL:
 
-**[https://app-auction-frontend-xxxxxx.azurewebsites.net/](https://app-auction-frontend-xxxxxx.azurewebsites.net/)** *(Reemplaza esta URL con la tuya después del despliegue)*
+**[https://app-subasta.azurewebsites.net/](https://app-subasta.azurewebsites.net/)**
 
 ---
 

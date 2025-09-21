@@ -13,15 +13,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      
-      - name: Set up .NET 9 Preview 
+      - name: Set up .NET 9 Preview
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '9.0.x'
           dotnet-quality: 'preview'
 
+      # --- RUTA CORREGIDA AQUÍ ---
       - name: Build and publish the project
-        run: dotnet publish backend/src/AuctionApp.Api/AuctionApp.Api.csproj -c Release -o ./publish-backend
+        run: dotnet publish backend/AuctionApp.Api/AuctionApp.Api.csproj -c Release -o ./publish-backend
 
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2

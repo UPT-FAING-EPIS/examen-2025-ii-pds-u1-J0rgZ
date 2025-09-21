@@ -52,7 +52,7 @@ resource "azurerm_linux_web_app" "frontend" {
 
   site_config {
     application_stack {
-      node_version = "18-lts"
+      node_version = "20-lts"
     }
   }
 }
