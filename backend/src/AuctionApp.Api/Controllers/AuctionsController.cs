@@ -5,38 +5,42 @@ using AuctionApp.Api.Models;
 using AuctionApp.Api.Data;
 using AuctionApp.Api.Hubs;
 
-[ApiController]
-[Route("api/[controller]")]
-public class AuctionsController : ControllerBase
+namespace AuctionApp.Api.Controllers
 {
-    private readonly AuctionDbContext _context;
-    private readonly IHubContext<AuctionHub> _hubContext;
-
-    public AuctionsController(AuctionDbContext context, IHubContext<AuctionHub> hubContext)
+    [ApiController]
+    [Route("api/[controller]")]
+    public class AuctionsController : ControllerBase
     {
-        _context = context;
-        _hubContext = hubContext;
-    }
+        private readonly AuctionDbContext _context;
+        private readonly IHubContext<AuctionHub> _hubContext;
 
-    [HttpGet]
-    public async Task<ActionResult<IEnumerable<Auction>>> GetAuctions()
-    {
-        return await _context.Auctions.ToListAsync();
-    }
+        public AuctionsController(AuctionDbContext context, IHubContext<AuctionHub> hubContext)
+        {
+            _context = context;
+            _hubContext = hubContext;
+        }
 
-    [HttpPost("{id}/bids")]
-    public async Task<IActionResult> PlaceBid(int id, [FromBody] decimal amount)
-    {
-        var auction = await _context.Auctions.FindAsync(id);
-        if (auction == null) return NotFound();
-        if (amount <= auction.CurrentPrice) return BadRequest("Bid must be higher than current price.");
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Auction>>> GetAuctions()
+        {
+            return await _context.Auctions.ToListAsync();
+        }
 
-        auction.CurrentPrice = amount;
-        await _context.SaveChangesAsync();
+        [HttpPost("{id}/bids")]
+        public async Task<IActionResult> PlaceBid(int id, [FromBody] decimal amount)
+        {
+            var auction = await _context.Auctions.FindAsync(id);
+            if (auction == null) return NotFound();
+            if (amount <= auction.CurrentPrice) return BadRequest("Bid must be higher than current price.");
 
-        // Notificar a todos los clientes via WebSocket
-        await _hubContext.Clients.All.SendAsync("ReceiveBidUpdate", id, amount);
+            auction.CurrentPrice = amount;
+            await _context.SaveChangesAsync();
 
-        return Ok(auction);
+            // Notificar a todos los clientes via WebSocket
+            await _hubContext.Clients.All.SendAsync("ReceiveBidUpdate", id, amount);
+
+            return Ok(auction);
+        }
     }
 }
+

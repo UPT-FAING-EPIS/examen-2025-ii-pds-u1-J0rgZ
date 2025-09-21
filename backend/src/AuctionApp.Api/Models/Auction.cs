@@ -1,3 +1,5 @@
+namespace AuctionApp.Api.Models
+
 public class Auction
 {
     public int Id { get; set; }
