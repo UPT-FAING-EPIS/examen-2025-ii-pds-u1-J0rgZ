@@ -3,12 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\J_Luf\\Documents\\GitHub\\examen-2025-ii-pds-u1-J0rgZ\\backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7DF1B3B9-9D3E-49F8-BAFA-DF5263554086}|AuctionApp.Api\\AuctionApp.Api.csproj|c:\\users\\j_luf\\documents\\github\\examen-2025-ii-pds-u1-j0rgz\\backend\\auctionapp.api\\controllers\\auctionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DF1B3B9-9D3E-49F8-BAFA-DF5263554086}|AuctionApp.Api\\AuctionApp.Api.csproj|solutionrelative:auctionapp.api\\controllers\\auctionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DF1B3B9-9D3E-49F8-BAFA-DF5263554086}|AuctionApp.Api\\AuctionApp.Api.csproj|c:\\users\\j_luf\\documents\\github\\examen-2025-ii-pds-u1-j0rgz\\backend\\auctionapp.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DF1B3B9-9D3E-49F8-BAFA-DF5263554086}|AuctionApp.Api\\AuctionApp.Api.csproj|solutionrelative:auctionapp.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7DF1B3B9-9D3E-49F8-BAFA-DF5263554086}|AuctionApp.Api\\AuctionApp.Api.csproj|c:\\users\\j_luf\\documents\\github\\examen-2025-ii-pds-u1-j0rgz\\backend\\auctionapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7DF1B3B9-9D3E-49F8-BAFA-DF5263554086}|AuctionApp.Api\\AuctionApp.Api.csproj|solutionrelative:auctionapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7DF1B3B9-9D3E-49F8-BAFA-DF5263554086}|AuctionApp.Api\\AuctionApp.Api.csproj|c:\\users\\j_luf\\documents\\github\\examen-2025-ii-pds-u1-j0rgz\\backend\\auctionapp.api\\controllers\\auctionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DF1B3B9-9D3E-49F8-BAFA-DF5263554086}|AuctionApp.Api\\AuctionApp.Api.csproj|solutionrelative:auctionapp.api\\controllers\\auctionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7DF1B3B9-9D3E-49F8-BAFA-DF5263554086}|AuctionApp.Api\\AuctionApp.Api.csproj|c:\\users\\j_luf\\documents\\github\\examen-2025-ii-pds-u1-j0rgz\\backend\\auctionapp.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7DF1B3B9-9D3E-49F8-BAFA-DF5263554086}|AuctionApp.Api\\AuctionApp.Api.csproj|solutionrelative:auctionapp.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DF1B3B9-9D3E-49F8-BAFA-DF5263554086}|AuctionApp.Api\\AuctionApp.Api.csproj|c:\\users\\j_luf\\documents\\github\\examen-2025-ii-pds-u1-j0rgz\\backend\\auctionapp.api\\models\\api\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DF1B3B9-9D3E-49F8-BAFA-DF5263554086}|AuctionApp.Api\\AuctionApp.Api.csproj|solutionrelative:auctionapp.api\\models\\api\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DF1B3B9-9D3E-49F8-BAFA-DF5263554086}|AuctionApp.Api\\AuctionApp.Api.csproj|c:\\users\\j_luf\\documents\\github\\examen-2025-ii-pds-u1-j0rgz\\backend\\auctionapp.api\\models\\api\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DF1B3B9-9D3E-49F8-BAFA-DF5263554086}|AuctionApp.Api\\AuctionApp.Api.csproj|solutionrelative:auctionapp.api\\models\\api\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DF1B3B9-9D3E-49F8-BAFA-DF5263554086}|AuctionApp.Api\\AuctionApp.Api.csproj|c:\\users\\j_luf\\documents\\github\\examen-2025-ii-pds-u1-j0rgz\\backend\\auctionapp.api\\models\\api\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DF1B3B9-9D3E-49F8-BAFA-DF5263554086}|AuctionApp.Api\\AuctionApp.Api.csproj|solutionrelative:auctionapp.api\\models\\api\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DF1B3B9-9D3E-49F8-BAFA-DF5263554086}|AuctionApp.Api\\AuctionApp.Api.csproj|c:\\users\\j_luf\\documents\\github\\examen-2025-ii-pds-u1-j0rgz\\backend\\auctionapp.api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DF1B3B9-9D3E-49F8-BAFA-DF5263554086}|AuctionApp.Api\\AuctionApp.Api.csproj|solutionrelative:auctionapp.api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DF1B3B9-9D3E-49F8-BAFA-DF5263554086}|AuctionApp.Api\\AuctionApp.Api.csproj|c:\\users\\j_luf\\documents\\github\\examen-2025-ii-pds-u1-j0rgz\\backend\\auctionapp.api\\models\\auction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DF1B3B9-9D3E-49F8-BAFA-DF5263554086}|AuctionApp.Api\\AuctionApp.Api.csproj|solutionrelative:auctionapp.api\\models\\auction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7DF1B3B9-9D3E-49F8-BAFA-DF5263554086}|AuctionApp.Api\\AuctionApp.Api.csproj|c:\\users\\j_luf\\documents\\github\\examen-2025-ii-pds-u1-j0rgz\\backend\\auctionapp.api\\hubs\\auctionhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7DF1B3B9-9D3E-49F8-BAFA-DF5263554086}|AuctionApp.Api\\AuctionApp.Api.csproj|c:\\users\\j_luf\\documents\\github\\examen-2025-ii-pds-u1-j0rgz\\backend\\auctionapp.api\\data\\auctiondbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7DF1B3B9-9D3E-49F8-BAFA-DF5263554086}|AuctionApp.Api\\AuctionApp.Api.csproj|solutionrelative:auctionapp.api\\data\\auctiondbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DF1B3B9-9D3E-49F8-BAFA-DF5263554086}|AuctionApp.Api\\AuctionApp.Api.csproj|c:\\users\\j_luf\\documents\\github\\examen-2025-ii-pds-u1-j0rgz\\backend\\auctionapp.api\\models\\auction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DF1B3B9-9D3E-49F8-BAFA-DF5263554086}|AuctionApp.Api\\AuctionApp.Api.csproj|solutionrelative:auctionapp.api\\models\\auction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,46 +74,111 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\J_Luf\\Documents\\GitHub\\examen-2025-ii-pds-u1-J0rgZ\\backend\\AuctionApp.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "AuctionApp.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\J_Luf\\Documents\\GitHub\\examen-2025-ii-pds-u1-J0rgZ\\backend\\AuctionApp.Api\\appsettings.json",
+              "RelativeToolTip": "AuctionApp.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-21T20:08:05.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\J_Luf\\Documents\\GitHub\\examen-2025-ii-pds-u1-J0rgZ\\backend\\AuctionApp.Api\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "AuctionApp.Api\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\J_Luf\\Documents\\GitHub\\examen-2025-ii-pds-u1-J0rgZ\\backend\\AuctionApp.Api\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "AuctionApp.Api\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAA5wE8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T20:07:10.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\J_Luf\\Documents\\GitHub\\examen-2025-ii-pds-u1-J0rgZ\\backend\\AuctionApp.Api\\Program.cs",
               "RelativeDocumentMoniker": "AuctionApp.Api\\Program.cs",
               "ToolTip": "C:\\Users\\J_Luf\\Documents\\GitHub\\examen-2025-ii-pds-u1-J0rgZ\\backend\\AuctionApp.Api\\Program.cs",
               "RelativeToolTip": "AuctionApp.Api\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADsAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-21T13:11:21.689Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "AuctionsController.cs",
               "DocumentMoniker": "C:\\Users\\J_Luf\\Documents\\GitHub\\examen-2025-ii-pds-u1-J0rgZ\\backend\\AuctionApp.Api\\Controllers\\AuctionsController.cs",
               "RelativeDocumentMoniker": "AuctionApp.Api\\Controllers\\AuctionsController.cs",
               "ToolTip": "C:\\Users\\J_Luf\\Documents\\GitHub\\examen-2025-ii-pds-u1-J0rgZ\\backend\\AuctionApp.Api\\Controllers\\AuctionsController.cs",
               "RelativeToolTip": "AuctionApp.Api\\Controllers\\AuctionsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAQwCQAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-21T13:09:35.753Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuctionHub.cs",
-              "DocumentMoniker": "C:\\Users\\J_Luf\\Documents\\GitHub\\examen-2025-ii-pds-u1-J0rgZ\\backend\\AuctionApp.Api\\Hubs\\AuctionHub.cs",
-              "RelativeDocumentMoniker": "AuctionApp.Api\\Hubs\\AuctionHub.cs",
-              "ToolTip": "C:\\Users\\J_Luf\\Documents\\GitHub\\examen-2025-ii-pds-u1-J0rgZ\\backend\\AuctionApp.Api\\Hubs\\AuctionHub.cs",
-              "RelativeToolTip": "AuctionApp.Api\\Hubs\\AuctionHub.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "AuthResponse.cs",
+              "DocumentMoniker": "C:\\Users\\J_Luf\\Documents\\GitHub\\examen-2025-ii-pds-u1-J0rgZ\\backend\\AuctionApp.Api\\Models\\Api\\AuthResponse.cs",
+              "RelativeDocumentMoniker": "AuctionApp.Api\\Models\\Api\\AuthResponse.cs",
+              "ToolTip": "C:\\Users\\J_Luf\\Documents\\GitHub\\examen-2025-ii-pds-u1-J0rgZ\\backend\\AuctionApp.Api\\Models\\Api\\AuthResponse.cs",
+              "RelativeToolTip": "AuctionApp.Api\\Models\\Api\\AuthResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T13:06:22.57Z",
+              "WhenOpened": "2025-09-21T20:06:39.971Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\J_Luf\\Documents\\GitHub\\examen-2025-ii-pds-u1-J0rgZ\\backend\\AuctionApp.Api\\Models\\Api\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "AuctionApp.Api\\Models\\Api\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\J_Luf\\Documents\\GitHub\\examen-2025-ii-pds-u1-J0rgZ\\backend\\AuctionApp.Api\\Models\\Api\\LoginRequest.cs",
+              "RelativeToolTip": "AuctionApp.Api\\Models\\Api\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T20:06:11.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RegisterRequest.cs",
+              "DocumentMoniker": "C:\\Users\\J_Luf\\Documents\\GitHub\\examen-2025-ii-pds-u1-J0rgZ\\backend\\AuctionApp.Api\\Models\\Api\\RegisterRequest.cs",
+              "RelativeDocumentMoniker": "AuctionApp.Api\\Models\\Api\\RegisterRequest.cs",
+              "ToolTip": "C:\\Users\\J_Luf\\Documents\\GitHub\\examen-2025-ii-pds-u1-J0rgZ\\backend\\AuctionApp.Api\\Models\\Api\\RegisterRequest.cs",
+              "RelativeToolTip": "AuctionApp.Api\\Models\\Api\\RegisterRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T20:05:28.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\J_Luf\\Documents\\GitHub\\examen-2025-ii-pds-u1-J0rgZ\\backend\\AuctionApp.Api\\Models\\User.cs",
+              "RelativeDocumentMoniker": "AuctionApp.Api\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\J_Luf\\Documents\\GitHub\\examen-2025-ii-pds-u1-J0rgZ\\backend\\AuctionApp.Api\\Models\\User.cs",
+              "RelativeToolTip": "AuctionApp.Api\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T20:04:09.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "AuctionDbContext.cs",
               "DocumentMoniker": "C:\\Users\\J_Luf\\Documents\\GitHub\\examen-2025-ii-pds-u1-J0rgZ\\backend\\AuctionApp.Api\\Data\\AuctionDbContext.cs",
               "RelativeDocumentMoniker": "AuctionApp.Api\\Data\\AuctionDbContext.cs",
@@ -97,21 +186,32 @@
               "RelativeToolTip": "AuctionApp.Api\\Data\\AuctionDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T11:31:20.068Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-21T11:31:20.068Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Auction.cs",
               "DocumentMoniker": "C:\\Users\\J_Luf\\Documents\\GitHub\\examen-2025-ii-pds-u1-J0rgZ\\backend\\AuctionApp.Api\\Models\\Auction.cs",
               "RelativeDocumentMoniker": "AuctionApp.Api\\Models\\Auction.cs",
               "ToolTip": "C:\\Users\\J_Luf\\Documents\\GitHub\\examen-2025-ii-pds-u1-J0rgZ\\backend\\AuctionApp.Api\\Models\\Auction.cs",
               "RelativeToolTip": "AuctionApp.Api\\Models\\Auction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-21T11:30:38.523Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AuctionHub.cs",
+              "DocumentMoniker": "C:\\Users\\J_Luf\\Documents\\GitHub\\examen-2025-ii-pds-u1-J0rgZ\\backend\\AuctionApp.Api\\Hubs\\AuctionHub.cs",
+              "RelativeDocumentMoniker": "AuctionApp.Api\\Hubs\\AuctionHub.cs",
+              "ToolTip": "C:\\Users\\J_Luf\\Documents\\GitHub\\examen-2025-ii-pds-u1-J0rgZ\\backend\\AuctionApp.Api\\Hubs\\AuctionHub.cs",
+              "RelativeToolTip": "AuctionApp.Api\\Hubs\\AuctionHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T13:06:22.57Z"
             }
           ]
         }

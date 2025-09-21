@@ -58,6 +58,12 @@ namespace AuctionApp.Api.Controllers
 
         private string GenerateJwtToken(User user)
         {
+            var jwtKey = _config["Jwt:Key"];
+            if (string.IsNullOrEmpty(jwtKey))
+            {
+                throw new InvalidOperationException("La clave JWT (Jwt:Key) no está configurada.");
+            }
+
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 

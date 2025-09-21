@@ -7,7 +7,7 @@ namespace AuctionApp.Api.Models
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
-        public string Id { get; set; }
+        public string Id { get; set; } = null!;
         public string ItemName { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
         public decimal StartingPrice { get; set; }
