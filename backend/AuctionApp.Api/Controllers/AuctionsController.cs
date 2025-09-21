@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AuctionApp.Api.Data;
+using AuctionApp.Api.Hubs;
+using AuctionApp.Api.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
-using AuctionApp.Api.Models;
-using AuctionApp.Api.Data;
-using AuctionApp.Api.Hubs;
+using MongoDB.Driver;
 
 namespace AuctionApp.Api.Controllers
 {
@@ -11,39 +13,42 @@ namespace AuctionApp.Api.Controllers
     [ApiController]
     public class AuctionsController : ControllerBase
     {
-        private readonly AuctionDbContext _context;
+        private readonly IMongoCollection<Auction> _auctions;
         private readonly IHubContext<AuctionHub> _hubContext;
 
-        public AuctionsController(AuctionDbContext context, IHubContext<AuctionHub> hubContext)
+        // Inyectamos la base de datos de MongoDB
+        public AuctionsController(IMongoDatabase database, IHubContext<AuctionHub> hubContext)
         {
-            _context = context;
+            _auctions = database.GetCollection<Auction>("Auctions");
             _hubContext = hubContext;
         }
 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Auction>>> GetAuctions()
         {
-            // Para demo, si no hay subastas, creamos una.
-            if (!_context.Auctions.Any())
+            // Si no hay subastas, creamos una para la demo
+            if (await _auctions.CountDocumentsAsync(FilterDefinition<Auction>.Empty) == 0)
             {
-                _context.Auctions.Add(new Auction { ItemName = "Ejemplo de Subasta", CurrentPrice = 100, EndTime = DateTime.UtcNow.AddHours(1), IsActive = true });
-                await _context.SaveChangesAsync();
+                await _auctions.InsertOneAsync(new Auction { ItemName = "Ejemplo desde MongoDB", CurrentPrice = 150, EndTime = DateTime.UtcNow.AddHours(1), IsActive = true });
             }
-            return await _context.Auctions.ToListAsync();
+            return await _auctions.Find(Builders<Auction>.Filter.Empty).ToListAsync();
         }
 
+        [Authorize]
         [HttpPost("{id}/bids")]
-        public async Task<IActionResult> PlaceBid(int id, [FromBody] decimal amount)
+        public async Task<IActionResult> PlaceBid(string id, [FromBody] decimal amount)
         {
-            var auction = await _context.Auctions.FindAsync(id);
-            if (auction == null) return NotFound();
-            if (amount <= auction.CurrentPrice) return BadRequest("La puja debe ser mayor que el precio actual.");
+            var filter = Builders<Auction>.Filter.Eq(a => a.Id, id);
+            var auction = await _auctions.Find(filter).FirstOrDefaultAsync();
 
-            auction.CurrentPrice = amount;
-            await _context.SaveChangesAsync();
+            if (auction == null) return NotFound();
+            if (amount <= auction.CurrentPrice) return BadRequest("La puja debe ser mayor.");
+
+            var update = Builders<Auction>.Update.Set(a => a.CurrentPrice, amount);
+            await _auctions.UpdateOneAsync(filter, update);
 
             await _hubContext.Clients.All.SendAsync("ReceiveBidUpdate", id, amount);
-            return Ok(auction);
+            return Ok();
         }
     }
 }

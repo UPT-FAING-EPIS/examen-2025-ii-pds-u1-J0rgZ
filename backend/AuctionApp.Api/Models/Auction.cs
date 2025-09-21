@@ -1,8 +1,13 @@
-﻿namespace AuctionApp.Api.Models
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
+
+namespace AuctionApp.Api.Models
 {
     public class Auction
     {
-        public int Id { get; set; }
+        [BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string Id { get; set; }
         public string ItemName { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
         public decimal StartingPrice { get; set; }
