@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\J_Luf\\Documents\\GitHub\\examen-2025-ii-pds-u1-J0rgZ\\frontend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D33E6FF8-39CB-D302-5098-6F7BD15AA171}|frontend.esproj|c:\\users\\j_luf\\documents\\github\\examen-2025-ii-pds-u1-j0rgz\\frontend\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{D33E6FF8-39CB-D302-5098-6F7BD15AA171}|frontend.esproj|solutionrelative:src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{D33E6FF8-39CB-D302-5098-6F7BD15AA171}|frontend.esproj|c:\\users\\j_luf\\documents\\github\\examen-2025-ii-pds-u1-j0rgz\\frontend\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D33E6FF8-39CB-D302-5098-6F7BD15AA171}|frontend.esproj|solutionrelative:src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D33E6FF8-39CB-D302-5098-6F7BD15AA171}|frontend.esproj|c:\\users\\j_luf\\documents\\github\\examen-2025-ii-pds-u1-j0rgz\\frontend\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D33E6FF8-39CB-D302-5098-6F7BD15AA171}|frontend.esproj|solutionrelative:src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,15 +38,28 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.css",
+              "DocumentMoniker": "C:\\Users\\J_Luf\\Documents\\GitHub\\examen-2025-ii-pds-u1-J0rgZ\\frontend\\src\\App.css",
+              "RelativeDocumentMoniker": "src\\App.css",
+              "ToolTip": "C:\\Users\\J_Luf\\Documents\\GitHub\\examen-2025-ii-pds-u1-J0rgZ\\frontend\\src\\App.css",
+              "RelativeToolTip": "src\\App.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-21T21:57:33.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "App.jsx",
-              "DocumentMoniker": "C:\\Users\\J_Luf\\Documents\\GitHub\\examen-2025-ii-pds-u1-J0rgZ\\frontend\\src\\App.jsx",
-              "RelativeDocumentMoniker": "src\\App.jsx",
-              "ToolTip": "C:\\Users\\J_Luf\\Documents\\GitHub\\examen-2025-ii-pds-u1-J0rgZ\\frontend\\src\\App.jsx",
-              "RelativeToolTip": "src\\App.jsx",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAAAHMAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-09-21T13:38:39.758Z",
+              "Title": "index.css",
+              "DocumentMoniker": "C:\\Users\\J_Luf\\Documents\\GitHub\\examen-2025-ii-pds-u1-J0rgZ\\frontend\\src\\index.css",
+              "RelativeDocumentMoniker": "src\\index.css",
+              "ToolTip": "C:\\Users\\J_Luf\\Documents\\GitHub\\examen-2025-ii-pds-u1-J0rgZ\\frontend\\src\\index.css",
+              "RelativeToolTip": "src\\index.css",
+              "ViewState": "AgIAAHECAAAAAAAAAAAUwIsCAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-21T21:57:30.486Z",
               "EditorCaption": ""
             }
           ]
