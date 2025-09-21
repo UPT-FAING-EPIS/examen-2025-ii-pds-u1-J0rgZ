@@ -1,0 +1,38 @@
+name: 4. Generate Diagrams
+
+on:
+  push:
+    branches: [main]
+    paths: ['infrastructure/**', 'backend/src/AuctionApp.Api/Models/**']
+  workflow_dispatch:
+
+jobs:
+  generate-diagrams:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Generate & Commit Infrastructure Diagram
+        uses: pkb/terraform-graph-beautifier-action@v1.1.2
+        with:
+          tf_var_folder: infrastructure
+          commit_message: "docs: Update infrastructure diagram"
+
+      - name: Generate & Commit Class Diagram (PlantUML)
+        run: |
+          sudo apt-get update && sudo apt-get install -y plantuml
+          echo "@startuml" > docs/class_diagram.puml
+          echo "class Auction {" >> docs/class_diagram.puml
+          echo "  +int Id" >> docs/class_diagram.puml
+          echo "  +string ItemName" >> docs/class_diagram.puml
+          echo "  +decimal CurrentPrice" >> docs/class_diagram.puml
+          echo "  +DateTime EndTime" >> docs/class_diagram.puml
+          echo "}" >> docs/class_diagram.puml
+          echo "@enduml" >> docs/class_diagram.puml
+          plantuml docs/class_diagram.puml
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add docs/class_diagram.png
+          git commit -m "docs: Update class diagram" || echo "No changes to commit"
+          git push
